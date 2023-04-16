@@ -2,6 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const num:number = 123;
+console.log(num)
+
+
 function App() {
   return (
     <div className="App">
