@@ -4,8 +4,8 @@ interface GreeterProps  {
     person: string,
 }
 
-function Greeter(props:GreeterProps): JSX.Element {
-    return <h1>hello, {props.person}</h1>
+function Greeter({person}:GreeterProps): JSX.Element {
+    return <h1>hello, {person}</h1>
 }
 
 // const Greeter: React.FC = () => {
