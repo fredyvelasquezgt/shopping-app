@@ -13,6 +13,7 @@ function App() {
   const addItem = (product:string) => {
     console.log('made it to the app')
     console.log(product)
+    setItems([...items, {id: 3, product, quantity: 1}])
   }
 
   // const items = [ 
