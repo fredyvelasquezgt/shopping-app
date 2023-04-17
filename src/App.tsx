@@ -10,6 +10,10 @@ import Item from './models/item';
 function App() {
  
   const [items, setItems] = useState<Item[]>([])
+  const addItem = (product:string) => {
+    console.log('made it to the app')
+    console.log(product)
+  }
 
   // const items = [ 
   //   {id: 1,
@@ -23,7 +27,7 @@ function App() {
   return (
     <div >
       <ShoppingList items={items}  />
-      <ShoppingListForm />
+      <ShoppingListForm onAddItem={addItem} />
 
     </div>
   );
